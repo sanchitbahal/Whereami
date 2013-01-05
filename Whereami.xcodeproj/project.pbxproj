@@ -16,8 +16,9 @@
 		830C42741696B16900007160 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 830C42731696B16900007160 /* Default.png */; };
 		830C42761696B16900007160 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830C42751696B16900007160 /* Default@2x.png */; };
 		830C42781696B16900007160 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830C42771696B16900007160 /* Default-568h@2x.png */; };
-		830C427B1696B16900007160 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C427A1696B16900007160 /* ViewController.m */; };
-		830C427E1696B16900007160 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830C427C1696B16900007160 /* ViewController.xib */; };
+		830C427B1696B16900007160 /* WhereamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C427A1696B16900007160 /* WhereamiViewController.m */; };
+		830C427E1696B16900007160 /* WhereamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830C427C1696B16900007160 /* WhereamiViewController.xib */; };
+		830C42851696B28A00007160 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C42841696B28A00007160 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +35,10 @@
 		830C42731696B16900007160 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		830C42751696B16900007160 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		830C42771696B16900007160 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		830C42791696B16900007160 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		830C427A1696B16900007160 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		830C427D1696B16900007160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		830C42791696B16900007160 /* WhereamiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereamiViewController.h; sourceTree = "<group>"; };
+		830C427A1696B16900007160 /* WhereamiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereamiViewController.m; sourceTree = "<group>"; };
+		830C427D1696B16900007160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhereamiViewController.xib; sourceTree = "<group>"; };
+		830C42841696B28A00007160 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830C42851696B28A00007160 /* CoreLocation.framework in Frameworks */,
 				830C42621696B16900007160 /* UIKit.framework in Frameworks */,
 				830C42641696B16900007160 /* Foundation.framework in Frameworks */,
 				830C42661696B16900007160 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		830C42601696B16900007160 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				830C42841696B28A00007160 /* CoreLocation.framework */,
 				830C42611696B16900007160 /* UIKit.framework */,
 				830C42631696B16900007160 /* Foundation.framework */,
 				830C42651696B16900007160 /* CoreGraphics.framework */,
@@ -85,9 +89,9 @@
 			children = (
 				830C42701696B16900007160 /* AppDelegate.h */,
 				830C42711696B16900007160 /* AppDelegate.m */,
-				830C42791696B16900007160 /* ViewController.h */,
-				830C427A1696B16900007160 /* ViewController.m */,
-				830C427C1696B16900007160 /* ViewController.xib */,
+				830C42791696B16900007160 /* WhereamiViewController.h */,
+				830C427A1696B16900007160 /* WhereamiViewController.m */,
+				830C427C1696B16900007160 /* WhereamiViewController.xib */,
 				830C42681696B16900007160 /* Supporting Files */,
 			);
 			path = Whereami;
@@ -162,7 +166,7 @@
 				830C42741696B16900007160 /* Default.png in Resources */,
 				830C42761696B16900007160 /* Default@2x.png in Resources */,
 				830C42781696B16900007160 /* Default-568h@2x.png in Resources */,
-				830C427E1696B16900007160 /* ViewController.xib in Resources */,
+				830C427E1696B16900007160 /* WhereamiViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +179,7 @@
 			files = (
 				830C426E1696B16900007160 /* main.m in Sources */,
 				830C42721696B16900007160 /* AppDelegate.m in Sources */,
-				830C427B1696B16900007160 /* ViewController.m in Sources */,
+				830C427B1696B16900007160 /* WhereamiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +194,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		830C427C1696B16900007160 /* ViewController.xib */ = {
+		830C427C1696B16900007160 /* WhereamiViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				830C427D1696B16900007160 /* en */,
 			);
-			name = ViewController.xib;
+			name = WhereamiViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

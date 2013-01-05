@@ -1,14 +1,6 @@
-//
-//  AppDelegate.m
-//  Whereami
-//
-//  Created by Sanchit Bahal on 04/01/13.
-//  Copyright (c) 2013 Sanchit Bahal. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "WhereamiViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +8,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.viewController = [[WhereamiViewController alloc] initWithNibName:@"WhereamiViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
