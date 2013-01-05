@@ -19,6 +19,7 @@
 		830C427B1696B16900007160 /* WhereamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C427A1696B16900007160 /* WhereamiViewController.m */; };
 		830C427E1696B16900007160 /* WhereamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830C427C1696B16900007160 /* WhereamiViewController.xib */; };
 		830C42851696B28A00007160 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C42841696B28A00007160 /* CoreLocation.framework */; };
+		830C428B1698194C00007160 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C428A1698194C00007160 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		830C427A1696B16900007160 /* WhereamiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereamiViewController.m; sourceTree = "<group>"; };
 		830C427D1696B16900007160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhereamiViewController.xib; sourceTree = "<group>"; };
 		830C42841696B28A00007160 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		830C428A1698194C00007160 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830C428B1698194C00007160 /* MapKit.framework in Frameworks */,
 				830C42851696B28A00007160 /* CoreLocation.framework in Frameworks */,
 				830C42621696B16900007160 /* UIKit.framework in Frameworks */,
 				830C42641696B16900007160 /* Foundation.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		830C42601696B16900007160 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				830C428A1698194C00007160 /* MapKit.framework */,
 				830C42841696B28A00007160 /* CoreLocation.framework */,
 				830C42611696B16900007160 /* UIKit.framework */,
 				830C42631696B16900007160 /* Foundation.framework */,
@@ -296,6 +300,7 @@
 				830C42831696B16900007160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
