@@ -14,4 +14,6 @@
 - (void)findLocation;
 - (void)foundLocation:(CLLocation *)loc;
 
+- (IBAction)mapTypeChanged:(UISegmentedControl *)sender;
+
 @end

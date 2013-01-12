@@ -58,8 +58,6 @@
 
 - (void)foundLocation:(CLLocation *)loc
 {
-    worldView.mapType = MKMapTypeSatellite;
-    
     CLLocationCoordinate2D centerCoordinate = loc.coordinate;
     
     BNRMapPoint *mapPoint = [[BNRMapPoint alloc] initWithCoordinate:centerCoordinate title:locationTitleField.text];
@@ -72,6 +70,15 @@
     [activityIndicator stopAnimating];
     locationTitleField.hidden = NO;
     [locationManager stopUpdatingLocation];
+}
+
+- (IBAction)mapTypeChanged:(UISegmentedControl *)sender {
+    if (sender.selectedSegmentIndex == 0)
+        worldView.mapType = MKMapTypeStandard;
+    else if (sender.selectedSegmentIndex == 1)
+        worldView.mapType = MKMapTypeSatellite;
+    else
+        worldView.mapType = MKMapTypeHybrid;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
