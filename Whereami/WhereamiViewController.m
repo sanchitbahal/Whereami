@@ -12,7 +12,7 @@
         locationManager.delegate = self;
         locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         locationManager.distanceFilter = 50;
-//        [locationManager startUpdatingHeading];
+        //        [locationManager startUpdatingHeading];
     }
     
     return self;
@@ -60,7 +60,10 @@
 {
     CLLocationCoordinate2D centerCoordinate = loc.coordinate;
     
-    BNRMapPoint *mapPoint = [[BNRMapPoint alloc] initWithCoordinate:centerCoordinate title:locationTitleField.text];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    
+    BNRMapPoint *mapPoint = [[BNRMapPoint alloc] initWithCoordinate:centerCoordinate title:locationTitleField.text subtitle:[dateFormatter stringFromDate:[NSDate date]]];
     [worldView addAnnotation:mapPoint];
     
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(centerCoordinate, 250, 250);

@@ -2,7 +2,7 @@
 
 @implementation BNRMapPoint
 
-@synthesize coordinate, title;
+@synthesize coordinate, title, subtitle;
 
 - (id)init
 {
@@ -11,10 +11,16 @@
 
 - (id)initWithCoordinate:(CLLocationCoordinate2D)c title:(NSString *)t
 {
+    return [self initWithCoordinate:c title:t subtitle:nil];
+}
+
+- (id)initWithCoordinate:(CLLocationCoordinate2D)c title:(NSString *)t subtitle:(NSString *)st
+{
     self = [super init];
     if (self) {
         coordinate = c;
         title = t;
+        subtitle = st;
     }
     
     return self;
