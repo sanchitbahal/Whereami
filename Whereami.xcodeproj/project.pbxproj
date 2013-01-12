@@ -20,6 +20,7 @@
 		830C427E1696B16900007160 /* WhereamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830C427C1696B16900007160 /* WhereamiViewController.xib */; };
 		830C42851696B28A00007160 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C42841696B28A00007160 /* CoreLocation.framework */; };
 		830C428B1698194C00007160 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C428A1698194C00007160 /* MapKit.framework */; };
+		830ECF2E16A1852B00D6F06A /* BNRMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 830ECF2D16A1852B00D6F06A /* BNRMapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		830C427D1696B16900007160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhereamiViewController.xib; sourceTree = "<group>"; };
 		830C42841696B28A00007160 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		830C428A1698194C00007160 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		830ECF2C16A1852B00D6F06A /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
+		830ECF2D16A1852B00D6F06A /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 			children = (
 				830C42701696B16900007160 /* AppDelegate.h */,
 				830C42711696B16900007160 /* AppDelegate.m */,
+				830ECF2C16A1852B00D6F06A /* BNRMapPoint.h */,
+				830ECF2D16A1852B00D6F06A /* BNRMapPoint.m */,
 				830C42791696B16900007160 /* WhereamiViewController.h */,
 				830C427A1696B16900007160 /* WhereamiViewController.m */,
 				830C427C1696B16900007160 /* WhereamiViewController.xib */,
@@ -184,6 +189,7 @@
 				830C426E1696B16900007160 /* main.m in Sources */,
 				830C42721696B16900007160 /* AppDelegate.m in Sources */,
 				830C427B1696B16900007160 /* WhereamiViewController.m in Sources */,
+				830ECF2E16A1852B00D6F06A /* BNRMapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
