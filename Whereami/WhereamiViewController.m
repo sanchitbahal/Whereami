@@ -58,6 +58,8 @@
 
 - (void)foundLocation:(CLLocation *)loc
 {
+    worldView.mapType = MKMapTypeSatellite;
+    
     CLLocationCoordinate2D centerCoordinate = loc.coordinate;
     
     BNRMapPoint *mapPoint = [[BNRMapPoint alloc] initWithCoordinate:centerCoordinate title:locationTitleField.text];
